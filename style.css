@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color:#ff7613;
+  --text-color:#727171;
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Roboto,sans-serif;
+  background-color: black;
+  color: white;
+  margin-bottom: 1000px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.image {
+  height: 250px;
+  border-radius: 50%;
+}
+
+.Container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  padding: 5rem;
+  grid-template-columns: 1fr 1fr  ;
+  background:#070707 ;
+  gap: 4rem;
+}
+
+@media only screen and (max-width:750px) {
+  .Container {
+    width: 100%;
+    padding: 3rem;
+    grid-template-columns: 1fr;
+    gap: 7rem;
+  }
+}
+.description {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-color);
+
+}
+
+.profile {
+  grid-column: 1 / -1;
+  padding: 4rem;
+}
+.profile-container {
+  display: flex;
+  gap: 2rem;
+}
+.profile-IMG {
+  max-width: 250px;
+}
+.first-name{
+  color: white;
+  font-weight: 200;
+  font-size:clamp(2rem,8vw,4rem) ;
+  display: block;
+  margin-bottom: -0.8rem;
+}
+.last-name {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: clamp(4rem,15vw,7rem);
+  display: block;
+}
+.profile-title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.download-button {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-top: 1.5rem ;
+}
+.download-button:hover {
+  color: var(--primary-color);
+}
+@media only screen and (max-width:750px) {
+  .profile-container {
+    flex-direction: column;
+  }
+}
+.skills-list {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  line-height: 2;
+}
+.title {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size:clamp(2rem,6vw,3rem) ;
+ 
+}
+.language {
+  margin-bottom: 4rem;
+}
+.sub-heading {
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.percentage {
+  margin-bottom: 4rem;
+}
+.hobbies {
+  display: block;
+  margin-top: 9.5rem;
+}
+.projects {
+  display: block;
+  margin-top: 4rem;
+}
+.contact-info {
+  display: block;
+  margin-top:2rem; 
+}
+.YOUTUBE {
+  display: block;
+  margin-top:2rem; 
+}
+.link {
+  display: block;
+  margin-top:1rem; 
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+
+
